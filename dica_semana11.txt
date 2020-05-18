@@ -1,0 +1,147 @@
+===============================Aula1===============================================
+              			 SemanaOmniStack
+====================================nodejs==========================================
+1-vs code
+2-npm install expess
+
+=====================================react==============================================
+1-npx create-react-app nomeApp
+2-cd nomeApp
+3-npm start
+npm cache clean --force
+=======================================================================================
+npm install -g expo-cli
+expo init frontend
+cd frontend
+npm start
+
+=============Resolucao de Erro========================================================
+npm i -g create-react-app 
+create-react-app
+create-react-app mern-app
+create-react-app --help
+=======================================================================================
+==============================Aula2====================================================
+1-Routa
+2-insomnia =>serve para teste routas
+3-npm install nodemon -D ==>serve para ficar inicializar node td momento que queremos inicializar o nosso requesicao ;
+  -no arqu package.json , troca scrip "teste" para "start":"nodemon index.js"
+  -vai no terminal exc "npm start"
+   -npm cache clean/npm cache clean --force ==>serve 	para limpar cache
+4-vai no site Knex
+   Roda esse comandos:
+  -npm install knex --save
+  -npm install sqlite3
+  -npx knex init==>serve para criar arq knexfile.js
+5-cria uma pasta src e move arq index.js para esta pasta (coloca tds arquivos q foram criado por vc)
+ -criar arq routes dentro de src e exporta a sua routa 
+ -cria uma um arq src/database e vai no arq knexfile.js altera script "'./dev.sqlite3' para './src/database/db.sqlite' "
+
+6- vai no site knex
+  -clique no migrations
+  -clique no Read the Migrations section
+   -cria uma pasta databas/migrations
+   -cria uma um arq src/database e vai no arq knexfile.js
+	migrations:{
+      		directory:'./src/database/migrations'
+    		}
+   -exec :npx knex migrate:make create_name 
+   -Despois vai site knex: Copia essa estrutura
+    knex.schema.createTable('users', function (table) {
+  	table.increments();
+ 	 table.string('name');
+  	table.timestamps();
+	})
+==============================================================================
+   -exec: 
+   -npx knex ==>lista tds comados
+   -npx knex migrate:make create_name ==>cria tabela
+   -npx knex migrate:latest ==>executa criacao da tabela 
+   -npx knex migrate:rollback ==>difaz ultimo migrate q foi excutado
+   -npx knex migrate:staus ==>lista tds migrate q já foi exec
+   -npm run start
+==============================================================================
+
+7-criar pasta controller
+  -OngController.js
+  -routas
+
+ 9-npm install cors-modo segurança
+  - importar cors no index
+10-subir codigo para github
+
+##################################React ################################################
+				REACT 
+1-Abrir frontend
+ -limpesa e estrutura os arq
+
+2-usar comd
+ -npm install
+ - acessar: http://localhost:3000
+
+3-Componente de react
+ -primeira letra tem q ser maiuscula
+ -npm install react-icons==>para instalar icons
+ -npm install react-router-dom==>instalador de routas
+
+4-criar arq/pasta 
+  -arq route.js
+  -pasta Register
+  -pasta profile
+  -pasta newIncident
+5-Conectar react com nosso backend
+#### Acessa back-end de aplicaçao para conectar com  API###
+  -navegar no teminar cmd até no pasta de back-end 
+  -rodar npm start -para iniciar servidor 
+  -abrir insomnia e testa se está rodando
+  -roda vs code:
+    -npm install axios ==> cliente http, que reponsavel para fazer chamadas da nossa API de backend e obter respostas ;
+   -criar pasta services
+     -api.js
+  ################################################Mobile###########################################################
+1-Instalaçao de Expo
+ -npm install 
+ -npm -v
+ -npm install -g expo-cli 
+ -expo -h
+ -expo init mobile1
+ -enter
+ -cd moble
+ -yarn start
+ -npm cache clean --force
+ -visual studio -->android emulador
+ 
+2-docs.expo.io
+  -routing & Navigation-->react-navigation-->reactnavigation.org.
+  -yarn add @react-navigation/native
+  -yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context   @react-native-community/masked-view
+2.1-Hello React Navigation
+  -yarn add @react-navigation/stack
+  -yarn add expo-constants
+  -yarn add expo-mail-composer
+  -npm install intl
+
+ 3-Conectar react com nosso backend(Conexão com API)
+#### Acessa back-end de aplicaçao para conectar com  API###
+  -navegar no teminar cmd até no pasta de back-end 
+  -rodar npm start -para iniciar servidor 
+  -abrir insomnia e testa se está rodando
+  -roda vs code:
+   -npm install axios ==> cliente http, que reponsavel para fazer chamadas da nossa API de backend e obter respostas ;
+   -criar pasta services
+     -api.js
+    -yarn add intl
+=====================================Autenticaça e teste=================================================
+1-yarn add celebrate/npm install celebrate 
+2-yarn add jest/npm install jest
+3-npx jest --init
+ -Y
+ -node ==> enter
+ -N
+ -y
+
+4-yarn test
+5-yarn cross-env -D
+ 
+
+                

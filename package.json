@@ -1,0 +1,8 @@
+{
+  "name": "Be-The-Hero",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/BadjiIssufi/Be-The-Hero.git",
+  "author": "Issufi Badji <issufibadji@gmail.com>",
+  "license": "MIT"
+}
